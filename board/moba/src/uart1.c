@@ -60,43 +60,20 @@ void uart1_init(void)
 
 }
 
-int fputc(int ch, FILE *f)
+void usart1_output(const char *str)
 {
-  if (ch == '\n') {
-    USART_SendData(USART1, '\r');
-    while(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
-  }
+    char ch;
 
-  USART_SendData(USART1, (uint8_t) ch);
-  while(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+    ch = *str++;
+    while (ch) {
+        if (ch == '\n') {
+            USART_SendData(USART1, '\r');
+            while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+        }
 
-  return ch;
-}
+        USART_SendData(USART1, ch);
+        while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
 
-int fgetc(FILE *fp)
-{
-  int ch = 0;
-
-  while(USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == RESET);
-
-  ch = (int)USART1->DR & 0xFF;
-
-  putchar(ch);
-
-  return ch;
-}
-
-void uart1_test1(void)
-{
-  USART_SendData(USART1, 'a');
-
-  /* Loop until the end of transmission */
-  while(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
-}
-
-int uart1_test_cnt;
-
-void uart1_test(void)
-{
-  printf("uart1 ok %d\n", uart1_test_cnt++);
+        ch = *str++;
+    }
 }

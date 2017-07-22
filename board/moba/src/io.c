@@ -11,7 +11,7 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include <stm32f10x.h>
+#include <stm32f4xx.h>
 #include <board.h>
 
 void GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
@@ -23,11 +23,11 @@ void io_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
 
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF, ENABLE);
 
-    /* Configure PD.02, PD.03, PD.04 and PD.07 as output push-pull */
-    GPIO_InitStructure.GPIO_Pin   =  GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_7;
+    /* Configure PF.00, PF.01, PF.02 as output push-pull */
+    GPIO_InitStructure.GPIO_Pin   =  GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2;
     GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOD, &GPIO_InitStructure);
+    GPIO_Init(GPIOF, &GPIO_InitStructure);
 }

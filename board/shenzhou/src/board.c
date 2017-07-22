@@ -64,7 +64,7 @@ void board_init(void)
     io_init();
 
     usart2_init();
-    console_output = usart2_putch;
+    console_output = usart2_output;
 }
 
 /*@}*/

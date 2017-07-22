@@ -97,7 +97,7 @@ void usart2_init(void)
   USART_GetFlagStatus(USART2, USART_FLAG_TC); // Read clear status register
 }
 
-void usart2_putch(const char *str)
+void usart2_output(const char *str)
 {
     char ch;
 

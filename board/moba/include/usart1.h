@@ -1,5 +1,5 @@
 /*
- * File      : usart2.h
+ * File      : usart1.h
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2009, RT-Thread Development Team
  *
@@ -12,10 +12,10 @@
  * 2009-01-05     Bernard      the first version
  */
 
-#ifndef __USART2_H__
-#define __USART2_H__
+#ifndef _USART1_H_
+#define _USART1_H_
 
-void usart2_init(void);
-void usart2_output(const char *str);
+void usart1_init(void);
+void usart1_output(const char *str);
 
-#endif  /* __USART2_H__ */
+#endif  /* _USART1_H_ */

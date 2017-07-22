@@ -1,0 +1,16 @@
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\src\stm32f10x_gpio.c
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\stm32f10x_gpio.h
+.\output\stm32f10x_gpio.o: ..\..\board\shenzhou\include\stm32f10x.h
+.\output\stm32f10x_gpio.o: ..\..\lib\cmsis\include\core_cm3.h
+.\output\stm32f10x_gpio.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\stm32f10x_gpio.o: ..\..\lib\cmsis\include\core_cmInstr.h
+.\output\stm32f10x_gpio.o: ..\..\lib\cmsis\include\core_cmFunc.h
+.\output\stm32f10x_gpio.o: ..\..\board\shenzhou\include\system_stm32f10x.h
+.\output\stm32f10x_gpio.o: ..\..\board\shenzhou\include\stm32f10x_conf.h
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\stm32f10x_dma.h
+.\output\stm32f10x_gpio.o: ..\..\board\shenzhou\include\stm32f10x.h
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\stm32f10x_gpio.h
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\stm32f10x_rcc.h
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\stm32f10x_spi.h
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\stm32f10x_usart.h
+.\output\stm32f10x_gpio.o: ..\..\mcu\stm\stm32f1xx\include\misc.h

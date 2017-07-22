@@ -1,5 +1,5 @@
 /*
- * File      : bsp.c
+ * File      : board.c
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2013 RT-Thread Develop Team
  *
@@ -15,7 +15,7 @@
 #include <os.h>
 #include <stm32f4xx.h>
 #include <board.h>
-#include <usart.h>
+#include <usart1.h>
 #include <io.h>
 
 /**
@@ -66,8 +66,8 @@ void board_init(void)
 	
     io_init();
 
-    bsp_usart_init();
-    console_output = bsp_usart_output;
+    usart1_init();
+    console_output = usart1_output;
 }
 
 /*@}*/
