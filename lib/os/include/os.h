@@ -65,8 +65,7 @@ void os_start(void);
 #include <os_error.h>
 #include <os_version.h>
 
-#include <os_arch.h>
-#include <rtcpu.h>
+#include <os_cpu.h>
 
 #include <os_console.h>
 #include <os_irq.h>

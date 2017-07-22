@@ -1,5 +1,5 @@
 /*
- * File      : rtcpu.h
+ * File      : os_cpu.h
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2012, RT-Thread Development Team
  *
@@ -31,6 +31,9 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+
+typedef uint32_t    os_sr_t;    /* CPU status register */
 
 /*
  * Context switch interfaces

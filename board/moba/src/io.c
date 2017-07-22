@@ -27,7 +27,7 @@ void io_init(void)
 
     /* Configure PF.00, PF.01, PF.02 as output push-pull */
     GPIO_InitStructure.GPIO_Pin   =  GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2;
-    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(GPIOF, &GPIO_InitStructure);
 }

@@ -1,9 +1,6 @@
 #include "stm32f4xx.h"
-#include <stdio.h>
 
-extern void Delay(__IO uint32_t nTime);
-
-void uart1_init(void)
+void usart1_init(void)
 {
   GPIO_InitTypeDef  GPIO_InitStructure;
   USART_InitTypeDef USART_InitStructure;
