@@ -8,12 +8,13 @@
 @forfiles /s /m *.crf /c "cmd /c del @file"
 @forfiles /s /m *.bak /c "cmd /c del @file"
 @forfiles /s /m *.scr /c "cmd /c del @file"
+@forfiles /s /m *.scvd /c "cmd /c del @file"
 
 @forfiles /s /m JLinkLog.txt /c "cmd /c del @file"
 @forfiles /s /m JLinkSettings.ini /c "cmd /c del @file"
 
 for %%i in (
-..\..\bin\timer_test\apps\timer_test
+output DebugConfig
 ) do (
 if exist %%i\*.* del %%i\*.* /Q
 )
