@@ -16,17 +16,14 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
-#define LED0_PORT       GPIOD
-#define LED0_PIN        GPIO_Pin_2
+#define LED0_PORT       GPIOF
+#define LED0_PIN        GPIO_Pin_0
 
-#define LED1_PORT       GPIOD
-#define LED1_PIN        GPIO_Pin_3
+#define LED1_PORT       GPIOF
+#define LED1_PIN        GPIO_Pin_1
 
-#define LED2_PORT       GPIOD
-#define LED2_PIN        GPIO_Pin_4
-
-#define LED3_PORT       GPIOD
-#define LED3_PIN        GPIO_Pin_7
+#define LED2_PORT       GPIOF
+#define LED2_PIN        GPIO_Pin_2
 
 void board_init(void);
 

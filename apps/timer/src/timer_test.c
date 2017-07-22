@@ -30,7 +30,7 @@ static void time_out1(void *arg)
 
 static void time_out2(void *arg)
 {
-    GPIO_TogglePin(LED0_PORT, LED1_PIN);
+    GPIO_TogglePin(LED1_PORT, LED1_PIN);
 }
 
 static void time_out3(void *arg)
