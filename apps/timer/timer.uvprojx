@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\board\shenzhou\include;..\..\mcu\stm\stm32f1xx\include;..\..\compiler\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m3;..\..\lib\c\include;.\include;..\..\lib\cmsis-core\include</IncludePath>
+              <IncludePath>..\..\board\shenzhou\include;..\..\mcu\stm\stm32f1xx\include;..\..\compiler\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m3;..\..\lib\c\include;..\..\lib\cmsis-core\include;.\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

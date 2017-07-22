@@ -56,7 +56,7 @@ void SysTick_Handler(void)
 /**
  * This function will initial STM32 board.
  */
-void bsp_init(void)
+void board_init(void)
 {
     /* Configure the SysTick */
     SysTick_Config(SystemCoreClock / OS_TICKS_PER_SEC);

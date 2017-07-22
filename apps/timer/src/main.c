@@ -21,7 +21,7 @@ int main(void)
 {
     os_enter_critical();
 
-    bsp_init();
+    board_init();
 
     os_init();
 

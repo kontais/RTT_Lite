@@ -1,5 +1,5 @@
 /*
- * File      : bsp.h
+ * File      : board.h
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2013, RT-Thread Development Team
  *
@@ -9,13 +9,13 @@
  *
  * Change Logs:
  * Date           Author       Notes
- * 2009-09-22     Bernard      add bsp.h to this bsp
+ * 2009-09-22     Bernard      add board.h to this bsp
  */
 
 // <<< Use Configuration Wizard in Context Menu >>>
-#ifndef _BSP_H_
-#define _BSP_H_
+#ifndef _BOARD_H_
+#define _BOARD_H_
 
-void bsp_init(void);
+void board_init(void);
 
-#endif  /* _BSP_H_ */
+#endif  /* _BOARD_H_ */
