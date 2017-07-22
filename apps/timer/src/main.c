@@ -12,8 +12,8 @@
  * 2016-12-06     kontais      kontais@aliyun.com
  */
 
-#include <os/os.h>
-#include <bsp/bsp.h>
+#include <os.h>
+#include <board.h>
 
 extern int application_init(void);
 

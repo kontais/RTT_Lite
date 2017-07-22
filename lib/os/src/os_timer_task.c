@@ -22,7 +22,7 @@
  * 2006-03-12     Bernard      first version
  */
 
-#include <os/os.h>
+#include <os.h>
 
 #ifdef OS_CFG_SOFT_TIMER
 

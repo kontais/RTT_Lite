@@ -11,7 +11,7 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include <os/os.h>
+#include <os.h>
 
 void os_init(void)
 {

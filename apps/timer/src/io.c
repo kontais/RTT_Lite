@@ -11,7 +11,7 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include "mcu/stm32f10x.h"
+#include "stm32f10x.h"
 
 void GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {

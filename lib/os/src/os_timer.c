@@ -23,7 +23,7 @@
  *                             timeout function.
  */
 
-#include <os/os.h>
+#include <os.h>
 
 /* hard timer list */
 static os_list_t os_timer_list = OS_LIST_INIT(os_timer_list);

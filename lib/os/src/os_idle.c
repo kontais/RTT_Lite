@@ -23,7 +23,7 @@
  *                             dead task.
  */
 
-#include <os/os.h>
+#include <os.h>
 
 #ifndef IDLE_TASK_STACK_SIZE
 #define IDLE_TASK_STACK_SIZE  128

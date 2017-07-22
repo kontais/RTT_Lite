@@ -5,7 +5,7 @@
 #define OS_NAME_MAX                   8
 #define OS_ALIGN_SIZE                 8
 
-#define OS_TICKS_PER_SEC              100     // 100Hz, 10ms/Tick
+#define OS_TICKS_PER_SEC              1000     // 1000Hz, 1ms/Tick
 
 #define OS_TASK_PRIORITY_MAX          256     // 256 max
 

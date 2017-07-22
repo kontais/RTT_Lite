@@ -54,7 +54,7 @@
  *         Simon Goldschmidt
  *
  */
-#include <os/os.h>
+#include <os.h>
 
 #define OS_HEAP_STATS
 

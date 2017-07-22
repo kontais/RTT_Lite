@@ -22,7 +22,7 @@
  * 2011-06-26     Bernard      add os_tick_set function.
  */
 
-#include <os/os.h>
+#include <os.h>
 
 static os_tick_t os_tick = 0;
 

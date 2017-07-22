@@ -21,7 +21,7 @@
  * Date           Author       Notes
  * 2006-03-16     Bernard      the first version
  */
-#include <os/os.h>
+#include <os.h>
 
 /* use precision */
 #define PRINTF_PRECISION

@@ -22,7 +22,7 @@
  * 2013-09-14     Grissiom     add an option check in os_event_get
  */
 
-#include <os/os.h>
+#include <os.h>
 
 /**
  * This function will initialize a mutex and put it under control of resource

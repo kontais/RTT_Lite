@@ -22,7 +22,7 @@
  * 2015-07-06     Bernard      Add os_assert_handler routine.
  */
 
-#include <os/os.h>
+#include <os.h>
 
 #ifndef OS_CFG_CPU_FFS
 const uint8_t __lowest_bit_bitmap[] =

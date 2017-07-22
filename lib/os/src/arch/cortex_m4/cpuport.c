@@ -255,4 +255,4 @@ int __ffs(int value)
 }
 #endif
 
-#endif
+#endif  /* OS_CFG_CPU_FFS */

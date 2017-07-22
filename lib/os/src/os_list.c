@@ -22,8 +22,8 @@
  * 2006-03-16     Bernard      the first version
  */
 #include <stdint.h>
-#include <os/os_def.h>
-#include <os/os_list.h>
+#include <os_def.h>
+#include <os_list.h>
 
 /**
  * @addtogroup KernelService

@@ -22,7 +22,7 @@
  * 2013-12-21     Grissiom     add os_critical_level
  */
 
-#include <os/os.h>
+#include <os.h>
 
 static int16_t os_sched_lock_nest;
 

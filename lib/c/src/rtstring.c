@@ -24,7 +24,7 @@
 
 #include <stdint.h>
 #include <stddef.h>
-#include <os/os_def.h>
+#include <os_def.h>
 
 /**
  * This function will set the content of memory to specified value

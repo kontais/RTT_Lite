@@ -50,48 +50,48 @@ void os_start(void);
 
 #include <stdint.h>
 
-#include <os/os_cfg.h>
+#include <os_cfg.h>
 #include <compiler.h>
-#include <os/os_def.h>
-#include <os/os_misc.h>
-#include <os/os_debug.h>
+#include <os_def.h>
+#include <os_misc.h>
+#include <os_debug.h>
 
 #include <rtstring.h>
 #include <rtstdio.h>
 
 #define OS_IDLE_TASK_PRIO             (OS_TASK_PRIORITY_MAX - 1)
 
-#include <os/os_list.h>
-#include <os/os_error.h>
-#include <os/os_version.h>
+#include <os_list.h>
+#include <os_error.h>
+#include <os_version.h>
 
-#include <os/os_arch.h>
-#include <os/rtcpu.h>
+#include <os_arch.h>
+#include <rtcpu.h>
 
-#include <os/os_console.h>
-#include <os/os_irq.h>
-#include <os/os_tick.h>
-#include <os/os_timer.h>
-#include <os/os_task.h>
-#include <os/os_idle.h>
-#include <os/os_sched.h>
+#include <os_console.h>
+#include <os_irq.h>
+#include <os_tick.h>
+#include <os_timer.h>
+#include <os_task.h>
+#include <os_idle.h>
+#include <os_sched.h>
 
 /* os components */
 #ifdef OS_CFG_HEAP
-#include <os/os_heap.h>
+#include <os_heap.h>
 #endif
 
-#include <os/os_mpool.h>
-#include <os/os_sem.h>
-#include <os/os_mutex.h>
-#include <os/os_event.h>
-#include <os/os_mbox.h>
-#include <os/os_mqueue.h>
+#include <os_mpool.h>
+#include <os_sem.h>
+#include <os_mutex.h>
+#include <os_event.h>
+#include <os_mbox.h>
+#include <os_mqueue.h>
 
 #ifdef OS_CFG_SOFT_TIMER
-#include <os/os_timer_task.h>
+#include <os_timer_task.h>
 #endif
 
-#include <os/os_ipc.h>
+#include <os_ipc.h>
 
 #endif	/* _OS_H_ */

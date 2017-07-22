@@ -11,7 +11,7 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include <os/os.h>
+#include <os.h>
 
 #define INIT_TASK_STACK_SIZE    2048
 static os_task_t init;

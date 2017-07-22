@@ -12,7 +12,7 @@
  * 2009-01-05   Bernard     first version
  */
 
-#include <os/os.h>
+#include <os.h>
 
 struct exception_stack_frame
 {
@@ -175,12 +175,12 @@ void os_arch_hard_fault_exception(struct exception_info * exception_info)
 __asm int __ffs(int value)
 {
     CMP     r0, #0x00
-    BEQ     exit_ffs
+    BEQ     exit
     RBIT    r0, r0
     CLZ     r0, r0
     ADDS    r0, r0, #0x01
 
-exit_ffs
+exit
     BX      lr
 }
 #elif defined(__IAR_SYSTEMS_ICC__)

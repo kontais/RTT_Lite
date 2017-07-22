@@ -10,6 +10,7 @@
       <TargetName>STM32F107VC</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F107VC</Device>
@@ -131,12 +132,12 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -334,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\..\board\shenzhou\include;..\..\mcu\stm\stm32f1xx\include;..\..\compiler\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m3;..\..\lib\c\include;.\include;..\..\lib\cmsis-core\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -376,7 +377,232 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>board\shenzhou</GroupName>
+          <Files>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f10x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f10x_cl.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\board\shenzhou\src\startup_stm32f10x_cl.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mcu\stm32f1xx</GroupName>
+          <Files>
+            <File>
+              <FileName>misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib\os\cortex_m3</GroupName>
+          <Files>
+            <File>
+              <FileName>cpuport.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\arch\cortex_m3\cpuport.c</FilePath>
+            </File>
+            <File>
+              <FileName>context_rvds.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\lib\os\src\arch\cortex_m3\context_rvds.S</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib\os</GroupName>
+          <Files>
+            <File>
+              <FileName>os.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_console.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_console.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_error.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_error.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_event.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_event.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_heap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_heap.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_idle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_idle.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_ipc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_ipc.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_irq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_irq.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_mbox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_mbox.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_mpool.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_mpool.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_mqueue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_mqueue.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_mutex.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_sched.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_sched.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_sem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_sem.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_tick.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_timer_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_timer_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_version.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\os\src\os_version.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib\cmsis</GroupName>
+        </Group>
+        <Group>
+          <GroupName>lib\c</GroupName>
+          <Files>
+            <File>
+              <FileName>rtstdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\c\src\rtstdio.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtstring.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\c\src\rtstring.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>apps\timer</GroupName>
+          <Files>
+            <File>
+              <FileName>application.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\application.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\io.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\timer_test.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

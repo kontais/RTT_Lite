@@ -22,7 +22,7 @@
  * 2012-12-29     Bernard      fixed compiling warning.
  */
 
-#include <os/os.h>
+#include <os.h>
 
 extern os_list_t os_ready_task_priority_list[OS_TASK_PRIORITY_MAX];
 extern os_task_t *os_current_task;

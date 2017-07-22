@@ -33,6 +33,25 @@ NVIC_PENDSVSET  EQU     0x10000000               ; value to trigger PendSV excep
     IMPORT interrupt_switch_task_to
 
 ;/*
+; * os_sr_t os_enter_critical();
+; */
+os_enter_critical    PROC
+    EXPORT  os_enter_critical
+    MRS     r0, PRIMASK
+    CPSID   I
+    BX      LR
+    ENDP
+
+;/*
+; * void os_exit_critical(os_sr_t sr);
+; */
+os_exit_critical    PROC
+    EXPORT  os_exit_critical
+    MSR     PRIMASK, r0
+    BX      LR
+    ENDP
+
+;/*
 ; * void os_arch_context_switch(rt_uint32 from, rt_uint32 to);
 ; * r0 --> from
 ; * r1 --> to

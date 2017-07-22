@@ -22,7 +22,7 @@
  * 2012-03-22     Bernard      fix align issue in os_mpool_init and os_mpool_create.
  */
 
-#include <os/os.h>
+#include <os.h>
 
 /**
  * @addtogroup MM

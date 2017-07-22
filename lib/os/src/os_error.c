@@ -22,7 +22,7 @@
  * 2006-03-16     Bernard      the first version
  */
 
-#include <os/os.h>
+#include <os.h>
 
 /**
  * @addtogroup KernelService

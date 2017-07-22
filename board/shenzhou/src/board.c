@@ -12,10 +12,10 @@
  * 2009-01-05     Bernard      first implementation
  */
 
-#include <os/os.h>
-#include <mcu/stm32f10x.h>
-#include <bsp/bsp.h>
-#include <bsp/usart.h>
+#include <os.h>
+#include <stm32f10x.h>
+#include <board.h>
+#include <usart.h>
 
 //#include <stdint.h>
 /**

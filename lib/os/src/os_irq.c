@@ -22,7 +22,7 @@
  * 2006-05-03     Bernard      add IRQ_DEBUG
  */
 
-#include <os/os.h>
+#include <os.h>
 
 /* #define IRQ_DEBUG */
 

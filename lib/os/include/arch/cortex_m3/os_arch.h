@@ -21,7 +21,6 @@
 #define _OS_ARCH_ARM_H
 
 #include <stdint.h>
-#include "mcu/cortex_m3.h"
 
 /* CPU status register */
 typedef uint32_t os_sr_t;
