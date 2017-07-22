@@ -14,8 +14,7 @@
 
 #include <os.h>
 #include <board.h>
-
-extern int application_init(void);
+#include <application.h>
 
 int main(void)
 {

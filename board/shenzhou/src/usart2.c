@@ -1,5 +1,5 @@
 /*
- * File      : usart.c
+ * File      : usart2.c
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2013, RT-Thread Develop Team
  *
@@ -72,7 +72,7 @@ void USART_DMA_Configuration(void)
   DMA_Init(DMA1_Channel6, &DMA_InitStructure);
 }
 
-void bsp_usart_init(void)
+void usart2_init(void)
 {
     USART_InitTypeDef USART_InitStructure;
 
@@ -97,7 +97,7 @@ void bsp_usart_init(void)
   USART_GetFlagStatus(USART2, USART_FLAG_TC); // Read clear status register
 }
 
-void bsp_usart_output(const char *str)
+void usart2_putch(const char *str)
 {
     char ch;
 

@@ -390,14 +390,19 @@
               <FilePath>..\..\board\shenzhou\src\system_stm32f10x.c</FilePath>
             </File>
             <File>
-              <FileName>usart.c</FileName>
+              <FileName>usart2.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\usart.c</FilePath>
+              <FilePath>..\..\board\shenzhou\src\usart2.c</FilePath>
             </File>
             <File>
               <FileName>startup_stm32f10x_cl.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\board\shenzhou\src\startup_stm32f10x_cl.s</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\io.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -586,11 +591,6 @@
               <FileName>application.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\application.c</FilePath>
-            </File>
-            <File>
-              <FileName>io.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\io.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>

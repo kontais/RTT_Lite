@@ -16,8 +16,8 @@
 #include <stm32f4xx.h>
 #include <board.h>
 #include <usart.h>
+#include <io.h>
 
-//#include <stdint.h>
 /**
  * @addtogroup STM32
  */
@@ -60,8 +60,11 @@ void board_init(void)
 {
     RCC_ClocksTypeDef RCC_Clocks;
 
+    /* Configure the SysTick */
     RCC_GetClocksFreq(&RCC_Clocks);
     SysTick_Config(RCC_Clocks.HCLK_Frequency / OS_TICKS_PER_SEC);
+	
+    io_init();
 
     bsp_usart_init();
     console_output = bsp_usart_output;

@@ -1,5 +1,5 @@
 /*
- * File      : bsp.c
+ * File      : board.c
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2013 RT-Thread Develop Team
  *
@@ -15,9 +15,9 @@
 #include <os.h>
 #include <stm32f10x.h>
 #include <board.h>
-#include <usart.h>
+#include <usart2.h>
+#include <io.h>
 
-//#include <stdint.h>
 /**
  * @addtogroup STM32
  */
@@ -60,9 +60,11 @@ void board_init(void)
 {
     /* Configure the SysTick */
     SysTick_Config(SystemCoreClock / OS_TICKS_PER_SEC);
+	
+    io_init();
 
-    bsp_usart_init();
-    console_output = bsp_usart_output;
+    usart2_init();
+    console_output = usart2_putch;
 }
 
 /*@}*/

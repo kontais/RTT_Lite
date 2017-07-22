@@ -11,8 +11,11 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include "stm32f10x.h"
+#include <stm32f10x.h>
+#include <io.h>
+#include <board.h>
 #include <os.h>
+
 
 os_timer_t test_timer;
 os_timer_t test_timer2;
@@ -20,17 +23,14 @@ os_timer_t test_timer2;
 os_timer_t test_timer3;
 os_timer_t test_timer4;
 
-void GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-void io_init(void);
-
-static void time_out(void *arg)
+static void time_out1(void *arg)
 {
-    GPIO_TogglePin(GPIOD, GPIO_Pin_2);
+    GPIO_TogglePin(LED0_PORT, LED0_PIN);
 }
 
 static void time_out2(void *arg)
 {
-    GPIO_TogglePin(GPIOD, GPIO_Pin_4);
+    GPIO_TogglePin(LED0_PORT, LED1_PIN);
 }
 
 static void time_out3(void *arg)
@@ -50,8 +50,7 @@ static void time_out4(void *arg)
 
 void timer_test(void)
 {
-    io_init();
-    os_timer_init(&test_timer, "xx", time_out, NULL, 100, OS_TIMER_PERIODIC);
+    os_timer_init(&test_timer, "xx1", time_out1, NULL, 100, OS_TIMER_PERIODIC);
     os_timer_start(&test_timer);
 
     os_timer_init(&test_timer2, "xx2", time_out2, NULL, 200, OS_TIMER_PERIODIC);

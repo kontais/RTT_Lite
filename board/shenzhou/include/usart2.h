@@ -1,5 +1,5 @@
 /*
- * File      : usart.h
+ * File      : usart2.h
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2009, RT-Thread Development Team
  *
@@ -12,10 +12,10 @@
  * 2009-01-05     Bernard      the first version
  */
 
-#ifndef __BSP_USART_H__
-#define __BSP_USART_H__
+#ifndef __USART2_H__
+#define __USART2_H__
 
-void bsp_usart_init(void);
-void bsp_usart_output(const char *str);
+void usart2_init(void);
+void usart2_putch(const char *str);
 
-#endif  /* __BSP_USART_H__ */
+#endif  /* __USART2_H__ */
