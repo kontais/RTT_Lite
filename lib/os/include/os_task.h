@@ -37,47 +37,47 @@
 /*
  * task state definitions
  */
-#define OS_TASK_INIT                  0x00                /**< Initialized status */
-#define OS_TASK_READY                 0x01                /**< Ready status */
-#define OS_TASK_SUSPEND               0x02                /**< Suspend status */
-#define OS_TASK_RUNNING               0x03                /**< Running status */
-#define OS_TASK_BLOCK                 OS_TASK_SUSPEND   /**< Blocked status */
-#define OS_TASK_CLOSE                 0x04                /**< Closed status */
+#define OS_TASK_INIT                  0x00                /* Initialized status */
+#define OS_TASK_READY                 0x01                /* Ready status */
+#define OS_TASK_SUSPEND               0x02                /* Suspend status */
+#define OS_TASK_RUNNING               0x03                /* Running status */
+#define OS_TASK_BLOCK                 OS_TASK_SUSPEND     /* Blocked status */
+#define OS_TASK_CLOSE                 0x04                /* Closed status */
 
 /**
  * task control command definitions
  */
-#define OS_TASK_CTRL_STARTUP          0x00                /**< Startup task. */
-#define OS_TASK_CTRL_CLOSE            0x01                /**< Close task. */
-#define OS_TASK_CTRL_CHANGE_PRIORITY  0x02                /**< Change task priority. */
-#define OS_TASK_CTRL_INFO             0x03                /**< Get task information. */
+#define OS_TASK_CTRL_STARTUP          0x00                /* Startup task. */
+#define OS_TASK_CTRL_CLOSE            0x01                /* Close task. */
+#define OS_TASK_CTRL_CHANGE_PRIORITY  0x02                /* Change task priority. */
+#define OS_TASK_CTRL_INFO             0x03                /* Get task information. */
 
 /**
  * Thread structure
  */
 struct os_task
 {
-    /* rt object */
-    char        name[OS_NAME_MAX];                      /**< the name of task */
-    uint8_t  type;                                   /**< type of object */
-    uint8_t  flags;                                  /**< task's flags */
+    /* os object */
+    char     name[OS_NAME_MAX];                 /* the name of task */
+    uint8_t  type;                              /* type of object */
+    uint8_t  flags;                             /* task's flags */
 
-    os_list_t   tlist;                                  /**< the task list */
+    os_list_t   tlist;                          /* the task list */
 
     /* stack point and entry */
-    void       *sp;                                     /**< stack point */
-    void       *entry;                                  /**< entry */
-    void       *parameter;                              /**< parameter */
-    void       *stack_addr;                             /**< stack address */
-    uint32_t   stack_size;                             /**< stack size */
+    void       *sp;                             /* stack point */
+    void       *entry;                          /* entry */
+    void       *parameter;                      /* parameter */
+    void       *stack_addr;                     /* stack address */
+    uint32_t   stack_size;                      /* stack size */
 
     /* error code */
-    os_err_t    error;                                  /**< error code */
+    os_err_t error;                             /* error code */
 
-    uint8_t  stat;                                   /**< task stat */
+    uint8_t  stat;                              /* task stat */
 
     /* priority */
-    uint8_t  current_priority;                       /**< current priority */
+    uint8_t  current_priority;                  /* current priority */
 #if OS_TASK_PRIORITY_MAX > 32
     uint8_t  priority_group;
 #endif
@@ -87,14 +87,14 @@ struct os_task
     uint32_t event_set;
     uint8_t  event_info;
 
-    os_tick_t  slice_tick;                              /**< task's initialized tick */
-    os_tick_t  remaining_tick;                         /**< remaining tick */
+    os_tick_t  slice_tick;                      /* task's initialized tick */
+    os_tick_t  remaining_tick;                  /* remaining tick */
 
-    os_timer_t timer;                       /**< built-in task timer */
+    os_timer_t timer;                           /* built-in task timer */
 
-    void (*cleanup)(struct os_task *task);             /**< cleanup function when task exit */
+    void (*cleanup)(struct os_task *task);      /* cleanup function when task exit */
 
-    uint32_t user_data;                              /**< private user data beyond this task */
+    uint32_t user_data;                         /* private user data beyond this task */
 };
 typedef struct os_task os_task_t;
 

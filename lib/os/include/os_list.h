@@ -31,10 +31,10 @@ extern "C" {
 
 struct os_list_node
 {
-    struct os_list_node *next;                          /**< point to next node. */
-    struct os_list_node *prev;                          /**< point to prev node. */
+    struct os_list_node *next;                          /* point to next node. */
+    struct os_list_node *prev;                          /* point to prev node. */
 };
-typedef struct os_list_node os_list_t;                  /**< Type for lists. */
+typedef struct os_list_node os_list_t;                  /* Type for lists. */
 
 #define OS_LIST_INIT(head) {&(head), &(head)}
 

@@ -29,10 +29,10 @@
  */
 struct os_sem
 {
-    uint8_t   flag;           /**< flag of kernel object */
-    os_list_t pending_list;   /**< tasks pended on this resource */
+    uint8_t   flag;           /* flag of kernel object */
+    os_list_t pending_list;   /* tasks pended on this resource */
 
-    uint32_t  value;          /**< value of semaphore. */
+    uint32_t  value;          /* value of semaphore. */
 };
 typedef struct os_sem os_sem_t;
 

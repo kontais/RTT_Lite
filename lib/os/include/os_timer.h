@@ -33,29 +33,29 @@
 /**
  * timer macros
  */
-#define OS_TIMER_ACTIVATED         0x1             /**< timer is active */
-#define OS_TIMER_PERIODIC          0x2             /**< periodic timer */
-#define OS_TIMER_SOFT_TIMER        0x4             /**< soft timer,the timer's callback function will be called in timer task. */
+#define OS_TIMER_ACTIVATED         0x1             /* timer is active */
+#define OS_TIMER_PERIODIC          0x2             /* periodic timer */
+#define OS_TIMER_SOFT_TIMER        0x4             /* soft timer,the timer's callback function will be called in timer task. */
 
-#define OS_TIMER_SET_TIME          0x0             /**< set timer control command */
-#define OS_TIMER_GET_TIME          0x1             /**< get timer control command */
-#define OS_TIMER_SET_ONESHOT       0x2             /**< change timer to one shot */
-#define OS_TIMER_SET_PERIODIC      0x3             /**< change timer to periodic */
+#define OS_TIMER_SET_TIME          0x0             /* set timer control command */
+#define OS_TIMER_GET_TIME          0x1             /* get timer control command */
+#define OS_TIMER_SET_ONESHOT       0x2             /* change timer to one shot */
+#define OS_TIMER_SET_PERIODIC      0x3             /* change timer to periodic */
 
 /**
  * timer structure
  */
 struct os_timer
 {
-    uint8_t          flag;                              /**< flag of kernel object */
+    uint8_t          flag;                              /* flag of kernel object */
     os_list_t        list;
 
-    void (*timeout_func)(void *parameter);              /**< timeout function */
-    void             *parameter;                        /**< timeout function's parameter */
+    void (*timeout_func)(void *parameter);              /* timeout function */
+    void             *parameter;                        /* timeout function's parameter */
 
-    os_tick_t        interval_tick;                     /**< timer tick count */
-    os_tick_t        startup_tick;                      /**< start tick */
-    os_tick_t        timeout_tick;                      /**< end tick */
+    os_tick_t        interval_tick;                     /* timer tick count */
+    os_tick_t        startup_tick;                      /* start tick */
+    os_tick_t        timeout_tick;                      /* end tick */
 };
 typedef struct os_timer os_timer_t;
 

@@ -29,18 +29,18 @@
  */
 struct os_mbox
 {
-    uint8_t flag;                                    /**< flag of kernel object */
-    os_list_t        pending_list;                    /**< tasks pended on this resource */
+    uint8_t flag;                                    /* flag of kernel object */
+    os_list_t        pending_list;                    /* tasks pended on this resource */
 
-    uint32_t         *msg_pool;                      /**< start address of message buffer */
+    uint32_t         *msg_pool;                      /* start address of message buffer */
 
-    uint16_t          size;                          /**< size of message pool */
+    uint16_t          size;                          /* size of message pool */
 
-    uint16_t          entry;                         /**< index of messages in msg_pool */
-    uint16_t          in_offset;                     /**< input offset of the message buffer */
-    uint16_t          out_offset;                    /**< output offset of the message buffer */
+    uint16_t          entry;                         /* index of messages in msg_pool */
+    uint16_t          in_offset;                     /* input offset of the message buffer */
+    uint16_t          out_offset;                    /* output offset of the message buffer */
 
-    os_list_t         sender_pending_list;         /**< sender task suspended on this mailbox */
+    os_list_t         sender_pending_list;         /* sender task suspended on this mailbox */
 };
 typedef struct os_mbox os_mbox_t;
 

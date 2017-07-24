@@ -24,8 +24,8 @@
 #ifndef _OS_IPC_H_
 #define _OS_IPC_H_
 
-#define OS_IPC_FIFO                 0x00            /**< FIFOed IPC. @ref IPC. */
-#define OS_IPC_PRIO                 0x01            /**< PRIOed IPC. @ref IPC. */
+#define OS_IPC_FIFO                 0x00            /* FIFOed IPC. @ref IPC. */
+#define OS_IPC_PRIO                 0x01            /* PRIOed IPC. @ref IPC. */
 
 /**
  * @addtogroup IPC

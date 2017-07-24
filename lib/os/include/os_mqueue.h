@@ -29,19 +29,19 @@
  */
 struct os_mqueue
 {
-    uint8_t flag;                                    /**< flag of kernel object */
-    os_list_t        pending_list;                    /**< tasks pended on this resource */
+    uint8_t flag;                                    /* flag of kernel object */
+    os_list_t        pending_list;                    /* tasks pended on this resource */
 
-    void                *msg_pool;                      /**< start address of message queue */
+    void                *msg_pool;                      /* start address of message queue */
 
-    uint16_t          msg_size;                      /**< message size of each message */
-    uint16_t          max_msgs;                      /**< max number of messages */
+    uint16_t          msg_size;                      /* message size of each message */
+    uint16_t          max_msgs;                      /* max number of messages */
 
-    uint16_t          entry;                         /**< index of messages in the queue */
+    uint16_t          entry;                         /* index of messages in the queue */
 
-    void                *msg_queue_head;                /**< list head */
-    void                *msg_queue_tail;                /**< list tail */
-    void                *msg_queue_free;                /**< pointer indicated the free node of queue */
+    void                *msg_queue_head;                /* list head */
+    void                *msg_queue_tail;                /* list tail */
+    void                *msg_queue_free;                /* pointer indicated the free node of queue */
 };
 typedef struct os_mqueue os_mqueue_t;
 

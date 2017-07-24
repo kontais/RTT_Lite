@@ -35,16 +35,16 @@
 #ifndef __OS_DEF_H__
 #define __OS_DEF_H__
 
-typedef int                         bool_t;      /**< boolean type */
+typedef int                         bool_t;      /* boolean type */
 
-//typedef uint32_t                    time_t;         /**< Type for time stamp */
-typedef uint32_t                    os_tick_t;      /**< Type for tick count */
-typedef uint32_t                    size_t;         /**< Type for size number */
-typedef int32_t                     offset_t;       /**< Type for offset */
+//typedef uint32_t                    time_t;         /* Type for time stamp */
+typedef uint32_t                    os_tick_t;      /* Type for tick count */
+typedef uint32_t                    size_t;         /* Type for size number */
+typedef int32_t                     offset_t;       /* Type for offset */
 
 /* boolean type definitions */
-#define TRUE                        1               /**< boolean true  */
-#define FALSE                       0               /**< boolean fails */
+#define TRUE                        1               /* boolean true  */
+#define FALSE                       0               /* boolean fails */
 
 /**
  * @ingroup BasicDef
@@ -64,7 +64,7 @@ typedef int32_t                     offset_t;       /**< Type for offset */
  */
 #define OS_ALIGN_DOWN(size, align)      ((size) & ~((align) - 1))
 
-#define OS_WAIT_FOREVER             0xffffffff      /**< Block forever until get resource. */
-#define OS_NO_WAIT                  0x00000000      /**< Non-block. */
+#define OS_WAIT_FOREVER             0xffffffff      /* Block forever until get resource. */
+#define OS_NO_WAIT                  0x00000000      /* Non-block. */
 
 #endif

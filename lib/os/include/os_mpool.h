@@ -29,17 +29,17 @@
  */
 struct os_mpool
 {
-    void            *start_address;                     /**< memory pool start */
-    size_t        size;                              /**< size of memory pool */
+    void            *start_address;                     /* memory pool start */
+    size_t        size;                              /* size of memory pool */
 
-    size_t        block_size;                        /**< size of memory blocks */
-    uint8_t      *block_list;                        /**< memory blocks list */
+    size_t        block_size;                        /* size of memory blocks */
+    uint8_t      *block_list;                        /* memory blocks list */
 
-    size_t        block_total_count;                 /**< numbers of memory block */
-    size_t        block_free_count;                  /**< numbers of free memory block */
+    size_t        block_total_count;                 /* numbers of memory block */
+    size_t        block_free_count;                  /* numbers of free memory block */
 
-    os_list_t        pending_list;                    /**< tasks pended on this resource */
-    size_t        suspend_task_count;              /**< numbers of task pended on this resource */
+    os_list_t        pending_list;                    /* tasks pended on this resource */
+    size_t        suspend_task_count;              /* numbers of task pended on this resource */
 };
 typedef struct os_mpool os_mpool_t;
 

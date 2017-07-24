@@ -29,15 +29,15 @@
  */
 struct os_mutex
 {
-    uint8_t flag;                                    /**< flag of kernel object */
-    os_list_t        pending_list;                    /**< tasks pended on this resource */
+    uint8_t flag;                                    /* flag of kernel object */
+    os_list_t        pending_list;                    /* tasks pended on this resource */
 
-    uint16_t          value;                         /**< value of mutex */
+    uint16_t          value;                         /* value of mutex */
 
-    uint8_t           original_priority;             /**< priority of last task hold the mutex */
-    uint8_t           hold;                          /**< numbers of task hold the mutex */
+    uint8_t           original_priority;             /* priority of last task hold the mutex */
+    uint8_t           hold;                          /* numbers of task hold the mutex */
 
-    os_task_t    *owner;                         /**< current owner of mutex */
+    os_task_t    *owner;                         /* current owner of mutex */
 };
 typedef struct os_mutex os_mutex_t;
 

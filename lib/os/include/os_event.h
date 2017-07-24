@@ -27,19 +27,19 @@
 /**
  * flag defintions in event
  */
-#define OS_EVENT_AND               0x01            /**< logic and */
-#define OS_EVENT_OR                0x02            /**< logic or */
-#define OS_EVENT_CLEAR             0x04            /**< clear flag */
+#define OS_EVENT_AND               0x01            /* logic and */
+#define OS_EVENT_OR                0x02            /* logic or */
+#define OS_EVENT_CLEAR             0x04            /* clear flag */
 
 /*
  * event structure
  */
 struct os_event
 {
-    uint8_t flag;                                    /**< flag of kernel object */
-    os_list_t        pending_list;                    /**< tasks pended on this resource */
+    uint8_t flag;                                    /* flag of kernel object */
+    os_list_t        pending_list;                    /* tasks pended on this resource */
 
-    uint32_t          set;                           /**< event set */
+    uint32_t          set;                           /* event set */
 };
 typedef struct os_event os_event_t;
 
