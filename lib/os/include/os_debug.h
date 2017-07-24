@@ -63,7 +63,7 @@ if (!(EX))                                                                    \
 do                                                                            \
 {                                                                             \
     if (type)                                                                 \
-        printk message;                                                   \
+        printf message;                                                   \
 }                                                                             \
 while (0)
 
@@ -76,7 +76,7 @@ do                                                                            \
     sr = os_enter_critical();                                                 \
     if (os_isr_nest_get() != 0)                                         \
     {                                                                         \
-        printk("Function[%s] shall not used in ISR\n", __FUNCTION__);     \
+        printf("Function[%s] shall not used in ISR\n", __FUNCTION__);     \
         OS_ASSERT(0)                                                          \
     }                                                                         \
     os_exit_critical(sr);                                                     \
@@ -94,7 +94,7 @@ do                                                                            \
     sr = os_enter_critical();                                                 \
     if (os_task_self() == NULL)                                          \
     {                                                                         \
-        printk("Function[%s] shall not be used before scheduler start\n", \
+        printf("Function[%s] shall not be used before scheduler start\n", \
                    __FUNCTION__);                                             \
         OS_ASSERT(0)                                                          \
     }                                                                         \

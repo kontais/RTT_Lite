@@ -192,16 +192,16 @@ void os_arch_hard_fault_exception(struct exception_stack_frame *exception_stack)
         if (result == OS_OK) return;
     }
 
-    printk("psr: 0x%08x\n", exception_stack->psr);
-    printk(" pc: 0x%08x\n", exception_stack->pc);
-    printk(" lr: 0x%08x\n", exception_stack->lr);
-    printk("r12: 0x%08x\n", exception_stack->r12);
-    printk("r03: 0x%08x\n", exception_stack->r3);
-    printk("r02: 0x%08x\n", exception_stack->r2);
-    printk("r01: 0x%08x\n", exception_stack->r1);
-    printk("r00: 0x%08x\n", exception_stack->r0);
+    printf("psr: 0x%08x\n", exception_stack->psr);
+    printf(" pc: 0x%08x\n", exception_stack->pc);
+    printf(" lr: 0x%08x\n", exception_stack->lr);
+    printf("r12: 0x%08x\n", exception_stack->r12);
+    printf("r03: 0x%08x\n", exception_stack->r3);
+    printf("r02: 0x%08x\n", exception_stack->r2);
+    printf("r01: 0x%08x\n", exception_stack->r1);
+    printf("r00: 0x%08x\n", exception_stack->r0);
 
-    printk("hard fault on task: %s\n", os_task_self()->name);
+    printf("hard fault on task: %s\n", os_task_self()->name);
 
     while (1);
 }
@@ -211,7 +211,7 @@ void os_arch_hard_fault_exception(struct exception_stack_frame *exception_stack)
  */
 void os_arch_shutdown(void)
 {
-    printk("shutdown...\n");
+    printf("shutdown...\n");
 
     OS_ASSERT(0);
 }

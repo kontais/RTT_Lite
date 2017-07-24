@@ -33,17 +33,17 @@ static void time_out2(void *arg)
 
 static void time_out3(void *arg)
 {
-    printk("time_out3\n");
+    printf("time_out3\n");
     os_task_sleep(200);
-    printk("time_out3 -> 2\n");
+    printf("time_out3 -> 2\n");
 
 }
 
 static void time_out4(void *arg)
 {
-    printk("time_out4\n");
+    printf("time_out4\n");
     os_task_sleep(500);
-    printk("time_out4 -> 2\n");
+    printf("time_out4 -> 2\n");
 }
 
 void timer_test(void)

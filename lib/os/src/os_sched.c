@@ -51,12 +51,12 @@ static void _os_sched_stack_check(os_task_t *task)
         (uint32_t)task->stack_addr + (uint32_t)task->stack_size) {
         os_sr_t sr;
 
-        printk("task:%s stack overflow\n", task->name);
+        printf("task:%s stack overflow\n", task->name);
 
         sr = os_enter_critical();
         while (sr);
     } else if ((uint32_t)task->sp <= ((uint32_t)task->stack_addr + 32)) {
-        printk("warning: %s stack is close to end of stack address.\n",
+        printf("warning: %s stack is close to end of stack address.\n",
                    task->name);
     }
 }

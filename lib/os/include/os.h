@@ -25,7 +25,6 @@
  * 2007-01-28     Bernard      rename OS_OBJECT_Class_Static to RT_Object_Class_Static
  * 2007-03-03     Bernard      clean up the definitions to os_def.h
  * 2010-04-11     yi.qiu       add module feature
- * 2013-06-24     Bernard      add printk re-define when not use OS_CFG_CONSOLE.
  */
 
 #ifndef _OS_H_
@@ -49,6 +48,7 @@ void os_init(void);
 void os_start(void);
 
 #include <stdint.h>
+#include <stdio.h>
 
 #include <os_cfg.h>
 #include <compiler.h>
@@ -57,7 +57,6 @@ void os_start(void);
 #include <os_debug.h>
 
 #include <rtstring.h>
-#include <rtstdio.h>
 
 #define OS_IDLE_TASK_PRIO             (OS_TASK_PRIORITY_MAX - 1)
 

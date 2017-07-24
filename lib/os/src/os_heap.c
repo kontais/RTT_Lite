@@ -147,7 +147,7 @@ void os_heap_init(void *begin_addr, void *end_addr)
         /* calculate the aligned memory size */
         mem_size_aligned = end_align - begin_align - 2 * SIZEOF_STRUCT_MEM;
     } else {
-        printk("mem init, error begin address 0x%x, and end address 0x%x\n",
+        printf("mem init, error begin address 0x%x, and end address 0x%x\n",
                    (uint32_t)begin_addr, (uint32_t)end_addr);
 
         return;

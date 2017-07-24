@@ -12,7 +12,6 @@
  * 2016-12-06     kontais      kontais@aliyun.com
  */
 #include <os.h>
-#include <stdio.h>
 
 #define INIT_TASK_STACK_SIZE    2048
 static os_task_t init;
@@ -21,7 +20,7 @@ static uint8_t init_task_stack[INIT_TASK_STACK_SIZE];
 
 void init_task_cleanup(os_task_t *task)
 {
-    printk("init_task_cleanup\n");
+    printf("init_task_cleanup\n");
 }
 
 

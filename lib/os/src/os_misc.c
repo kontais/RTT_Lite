@@ -84,7 +84,7 @@ void os_assert(const char* ex_string, const char* func, size_t line)
 {
     volatile char dummy = 0;
 
-    printk("(%s) assertion failed at function:%s, line number:%d \n", ex_string, func, line);
+    printf("(%s) assertion failed at function:%s, line number:%d \n", ex_string, func, line);
     while (dummy == 0);
 }
 #endif /* OS_CFG_DEBUG */
