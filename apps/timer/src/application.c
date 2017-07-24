@@ -12,6 +12,7 @@
  * 2016-12-06     kontais      kontais@aliyun.com
  */
 #include <os.h>
+#include <stdio.h>
 
 #define INIT_TASK_STACK_SIZE    2048
 static os_task_t init;
@@ -25,6 +26,9 @@ void init_task_cleanup(os_task_t *task)
 
 
 void timer_test(void);
+
+float f1 = 1.0F/3.0F;
+double d1 = 1.0L/3.0L;
 
 void init_task_entry(void* parameter)
 {
@@ -42,7 +46,7 @@ int application_init(void)
 
     os_ver = os_version_get();
 
-    printk("os verion %d.%d.%d\n", OS_VER_MAJOR(os_ver), OS_VER_MINOR(os_ver), OS_VER_REVISION(os_ver));
+    printf("os verion %d.%d.%d\n", OS_VER_MAJOR(os_ver), OS_VER_MINOR(os_ver), OS_VER_REVISION(os_ver));
     os_task_init(&init, "init", init_task_entry, NULL, &init_task_stack[0], INIT_TASK_STACK_SIZE, OS_TASK_PRIORITY_MAX/3, 20);
     os_task_startup(&init);
 

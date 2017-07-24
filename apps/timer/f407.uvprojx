@@ -186,7 +186,7 @@
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -403,6 +403,16 @@
               <FileName>startup_stm32f40xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\board\moba\src\startup_stm32f40xx.s</FilePath>
+            </File>
+            <File>
+              <FileName>fgetc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\fgetc.c</FilePath>
+            </File>
+            <File>
+              <FileName>fputc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\fputc.c</FilePath>
             </File>
           </Files>
         </Group>

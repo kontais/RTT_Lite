@@ -516,7 +516,7 @@ void printk(const char *fmt, ...)
         length = OS_CONSOLE_BUF_SIZE - 1;
     }
 
-    console_output(os_log_buf);
+    //console_output(os_log_buf);
 
     va_end(args);
 }
