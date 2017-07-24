@@ -85,7 +85,7 @@ void os_sched_init(void)
     /* initialize ready priority group */
     os_ready_task_group = 0;
     /* initialize ready table */
-    os_memset(os_ready_task_bitmap, 0, sizeof(os_ready_task_bitmap));
+    memset(os_ready_task_bitmap, 0, sizeof(os_ready_task_bitmap));
 #else
     os_ready_task_bitmap = 0;
 #endif

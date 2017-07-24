@@ -79,7 +79,7 @@ static os_err_t _os_task_init(os_task_t *task,
     task->stack_size = stack_size;
 
     /* init task stack */
-    os_memset(task->stack_addr, '#', task->stack_size);
+    memset(task->stack_addr, '#', task->stack_size);
     task->sp = (void *)os_arch_task_stack_init(task->entry, task->parameter,
                     (void *)((char *)task->stack_addr + task->stack_size - 4),
                     (void *)os_task_exit);

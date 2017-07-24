@@ -147,7 +147,7 @@ os_err_t os_mqueue_put(os_mqueue_t *mq, void *buffer, size_t size)
     /* the msg is the new tailer of list, the next shall be NULL */
     msg->next = NULL;
     /* copy buffer */
-    os_memcpy(msg + 1, buffer, size);
+    memcpy(msg + 1, buffer, size);
 
     sr = os_enter_critical();
     /* link msg to message queue */
@@ -221,7 +221,7 @@ os_err_t os_mqueue_put_urgent(os_mqueue_t *mq, void *buffer, size_t size)
     os_exit_critical(sr);
 
     /* copy buffer */
-    os_memcpy(msg + 1, buffer, size);
+    memcpy(msg + 1, buffer, size);
 
     sr = os_enter_critical();
 
@@ -363,7 +363,7 @@ os_err_t os_mqueue_get(os_mqueue_t *mq,
     os_exit_critical(sr);
 
     /* copy message */
-    os_memcpy(buffer, msg + 1, size > mq->msg_size ? mq->msg_size : size);
+    memcpy(buffer, msg + 1, size > mq->msg_size ? mq->msg_size : size);
 
     sr = os_enter_critical();
     /* put message to free list */

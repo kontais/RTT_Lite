@@ -391,7 +391,7 @@ void *os_realloc(void *rmem, size_t newsize)
     nmem = os_malloc(newsize);
     if (nmem != NULL) /* check memory */
     {
-        os_memcpy(nmem, rmem, size < newsize ? size : newsize);
+        memcpy(nmem, rmem, size < newsize ? size : newsize);
         os_free(rmem);
     }
 
@@ -421,7 +421,7 @@ void *os_calloc(size_t count, size_t size)
 
     /* zero the memory */
     if (p)
-        os_memset(p, 0, count * size);
+        memset(p, 0, count * size);
 
     return p;
 }

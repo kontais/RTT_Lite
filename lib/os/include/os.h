@@ -49,14 +49,13 @@ void os_start(void);
 
 #include <stdint.h>
 #include <stdio.h>
+#include <string.h>
 
 #include <os_cfg.h>
 #include <compiler.h>
 #include <os_def.h>
 #include <os_misc.h>
 #include <os_debug.h>
-
-#include <rtstring.h>
 
 #define OS_IDLE_TASK_PRIO             (OS_TASK_PRIORITY_MAX - 1)
 

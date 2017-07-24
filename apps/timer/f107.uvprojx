@@ -581,13 +581,6 @@
         </Group>
         <Group>
           <GroupName>lib\c</GroupName>
-          <Files>
-            <File>
-              <FileName>rtstring.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\lib\c\src\rtstring.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>apps\timer</GroupName>
