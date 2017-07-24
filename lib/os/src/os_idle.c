@@ -102,7 +102,7 @@ void os_init_idle_task(void)
 {
     /* initialize task */
     os_task_init(&idle,
-                   "tidle",
+                   "idle",
                    os_task_idle_entry,
                    NULL,
                    &os_task_stack[0],
