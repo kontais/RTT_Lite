@@ -12,11 +12,10 @@
  * 2009-01-05     Bernard      first implementation
  */
 
-#include <os.h>
-#include <stm32f10x.h>
 #include <board.h>
+#include <led.h>
 #include <usart2.h>
-#include <io.h>
+#include <os.h>
 
 /**
  * @addtogroup STM32
@@ -61,7 +60,7 @@ void board_init(void)
     /* Configure the SysTick */
     SysTick_Config(SystemCoreClock / OS_TICKS_PER_SEC);
 	
-    io_init();
+    led_init();
 
     usart2_init();
     console_output = usart2_output;

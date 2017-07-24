@@ -11,7 +11,7 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include <stm32f10x.h>
+#include <board.h>
 
 void USART_RCC_Configuration(void)
 {

@@ -11,11 +11,9 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include "stm32f4xx.h"
-#include <io.h>
 #include <board.h>
+#include <led.h>
 #include <os.h>
-
 
 os_timer_t test_timer;
 os_timer_t test_timer2;
@@ -25,12 +23,12 @@ os_timer_t test_timer4;
 
 static void time_out1(void *arg)
 {
-    GPIO_TogglePin(LED0_PORT, LED0_PIN);
+    led_toggle(LED0_PORT, LED0_PIN);
 }
 
 static void time_out2(void *arg)
 {
-    GPIO_TogglePin(LED1_PORT, LED1_PIN);
+    led_toggle(LED1_PORT, LED1_PIN);
 }
 
 static void time_out3(void *arg)

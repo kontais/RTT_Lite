@@ -1,5 +1,5 @@
 /*
- * File      : timer_test.c
+ * File      : led.h
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2013, RT-Thread Develop Team
  *
@@ -11,10 +11,19 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#ifndef _IO_H_
-#define _IO_H_
+#ifndef _LED_H_
+#define _LED_H_
 
-void GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-void io_init(void);
+#define LED0_PORT       GPIOF
+#define LED0_PIN        GPIO_Pin_0
 
-#endif /* _IO_H_ */
+#define LED1_PORT       GPIOF
+#define LED1_PIN        GPIO_Pin_1
+
+#define LED2_PORT       GPIOF
+#define LED2_PIN        GPIO_Pin_2
+
+void led_toggle(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+void led_init(void);
+
+#endif /* _LED_H_ */

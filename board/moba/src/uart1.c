@@ -1,4 +1,4 @@
-#include "stm32f4xx.h"
+#include <board.h>
 
 void usart1_init(void)
 {

@@ -1,5 +1,5 @@
 /*
- * File      : io.c
+ * File      : led.c
  * This file is part of RT-Thread RTOS
  * COPYRIGHT (C) 2006 - 2013, RT-Thread Develop Team
  *
@@ -11,15 +11,15 @@
  * Date           Author       Notes
  * 2016-12-06     kontais      kontais@aliyun.com
  */
-#include <stm32f4xx.h>
 #include <board.h>
+#include <led.h>
 
-void GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+void led_toggle(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   GPIOx->ODR ^= GPIO_Pin;
 }
 
-void io_init(void)
+void led_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
 

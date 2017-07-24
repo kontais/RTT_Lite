@@ -12,11 +12,10 @@
  * 2009-01-05     Bernard      first implementation
  */
 
-#include <os.h>
-#include <stm32f4xx.h>
 #include <board.h>
+#include <led.h>
 #include <usart1.h>
-#include <io.h>
+#include <os.h>
 
 /**
  * @addtogroup STM32
@@ -64,7 +63,7 @@ void board_init(void)
     RCC_GetClocksFreq(&RCC_Clocks);
     SysTick_Config(RCC_Clocks.HCLK_Frequency / OS_TICKS_PER_SEC);
 	
-    io_init();
+    led_init();
 
     usart1_init();
     console_output = usart1_output;

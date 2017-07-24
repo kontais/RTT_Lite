@@ -231,8 +231,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\board\moba\src\io.c</PathWithFileName>
-      <FilenameWithoutPath>io.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\board\moba\src\led.c</PathWithFileName>
+      <FilenameWithoutPath>led.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

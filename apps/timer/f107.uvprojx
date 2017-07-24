@@ -400,9 +400,9 @@
               <FilePath>..\..\board\shenzhou\src\startup_stm32f10x_cl.s</FilePath>
             </File>
             <File>
-              <FileName>io.c</FileName>
+              <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\io.c</FilePath>
+              <FilePath>..\..\board\shenzhou\src\led.c</FilePath>
             </File>
           </Files>
         </Group>

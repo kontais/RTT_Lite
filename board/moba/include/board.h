@@ -16,14 +16,7 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
-#define LED0_PORT       GPIOF
-#define LED0_PIN        GPIO_Pin_0
-
-#define LED1_PORT       GPIOF
-#define LED1_PIN        GPIO_Pin_1
-
-#define LED2_PORT       GPIOF
-#define LED2_PIN        GPIO_Pin_2
+#include <stm32f4xx.h>
 
 void board_init(void);
 
