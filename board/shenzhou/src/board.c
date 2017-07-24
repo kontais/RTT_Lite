@@ -32,9 +32,9 @@
 *******************************************************************************/
 void assert_failed(uint8_t* file, uint32_t line)
 {
-    printk("\n\r Wrong parameter value detected on\r\n");
-    printk("       file  %s\r\n", file);
-    printk("       line  %d\r\n", line);
+    printf("\n\r Wrong parameter value detected on\r\n");
+    printf("       file  %s\r\n", file);
+    printf("       line  %d\r\n", line);
 
     while (1) ;
 }

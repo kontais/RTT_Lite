@@ -667,18 +667,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\lib\c\src\rtstdio.c</PathWithFileName>
-      <FilenameWithoutPath>rtstdio.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>36</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>..\..\lib\c\src\rtstring.c</PathWithFileName>
       <FilenameWithoutPath>rtstring.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -694,7 +682,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>37</FileNumber>
+      <FileNumber>36</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -706,7 +694,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>38</FileNumber>
+      <FileNumber>37</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -718,7 +706,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>39</FileNumber>
+      <FileNumber>38</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>

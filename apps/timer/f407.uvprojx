@@ -573,11 +573,6 @@
           <GroupName>lib\c</GroupName>
           <Files>
             <File>
-              <FileName>rtstdio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\lib\c\src\rtstdio.c</FilePath>
-            </File>
-            <File>
               <FileName>rtstring.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\lib\c\src\rtstring.c</FilePath>

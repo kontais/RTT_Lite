@@ -132,29 +132,29 @@ void os_arch_hard_fault_exception(struct exception_info * exception_info)
             return;
     }
 
-    printk("psr: 0x%08x\n", context->exception_stack_frame.psr);
+    printf("psr: 0x%08x\n", context->exception_stack_frame.psr);
 
-    printk("r00: 0x%08x\n", context->exception_stack_frame.r0);
-    printk("r01: 0x%08x\n", context->exception_stack_frame.r1);
-    printk("r02: 0x%08x\n", context->exception_stack_frame.r2);
-    printk("r03: 0x%08x\n", context->exception_stack_frame.r3);
-    printk("r04: 0x%08x\n", context->r4);
-    printk("r05: 0x%08x\n", context->r5);
-    printk("r06: 0x%08x\n", context->r6);
-    printk("r07: 0x%08x\n", context->r7);
-    printk("r08: 0x%08x\n", context->r8);
-    printk("r09: 0x%08x\n", context->r9);
-    printk("r10: 0x%08x\n", context->r10);
-    printk("r11: 0x%08x\n", context->r11);
-    printk("r12: 0x%08x\n", context->exception_stack_frame.r12);
-    printk(" lr: 0x%08x\n", context->exception_stack_frame.lr);
-    printk(" pc: 0x%08x\n", context->exception_stack_frame.pc);
+    printf("r00: 0x%08x\n", context->exception_stack_frame.r0);
+    printf("r01: 0x%08x\n", context->exception_stack_frame.r1);
+    printf("r02: 0x%08x\n", context->exception_stack_frame.r2);
+    printf("r03: 0x%08x\n", context->exception_stack_frame.r3);
+    printf("r04: 0x%08x\n", context->r4);
+    printf("r05: 0x%08x\n", context->r5);
+    printf("r06: 0x%08x\n", context->r6);
+    printf("r07: 0x%08x\n", context->r7);
+    printf("r08: 0x%08x\n", context->r8);
+    printf("r09: 0x%08x\n", context->r9);
+    printf("r10: 0x%08x\n", context->r10);
+    printf("r11: 0x%08x\n", context->r11);
+    printf("r12: 0x%08x\n", context->exception_stack_frame.r12);
+    printf(" lr: 0x%08x\n", context->exception_stack_frame.lr);
+    printf(" pc: 0x%08x\n", context->exception_stack_frame.pc);
 
     if (exception_info->exc_return & (1 << 2) ) {
-        printk("hard fault on task: %s\r\n\r\n", os_task_self()->name);
+        printf("hard fault on task: %s\r\n\r\n", os_task_self()->name);
 
     } else {
-        printk("hard fault on handler\r\n\r\n");
+        printf("hard fault on handler\r\n\r\n");
     }
 
     while (1);
