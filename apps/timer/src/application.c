@@ -26,9 +26,6 @@ void os_task_init_cleanup(os_task_t *task)
 
 void timer_test(void);
 
-float f1 = 1.0F/3.0F;
-double d1 = 1.0L/3.0L;
-
 void os_task_init_entry(void* parameter)
 {
     os_task_t *task;
