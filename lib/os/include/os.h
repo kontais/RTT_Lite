@@ -30,23 +30,6 @@
 #ifndef _OS_H_
 #define _OS_H_
 
-enum os_err {
-  OS_OK       = 0, 	/* There is no error */
-  OS_ERROR    = 1, 	/* A generic error happens */
-  OS_TIMEOUT  = 2, 	/* Timed out */
-  OS_EFULL    = 3, 	/* The resource is full */
-  OS_EEMPTY   = 4, 	/* The resource is empty */
-  OS_ENOMEM   = 5, 	/* No memory */
-  OS_NOSYS    = 6, 	/* No system */
-  OS_EBUSY    = 7, 	/* Busy */
-  OS_EIO      = 8, 	/* IO error */
-};
-
-typedef enum os_err os_err_t;
-
-void os_init(void);
-void os_start(void);
-
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
@@ -57,15 +40,12 @@ void os_start(void);
 #include <os_misc.h>
 #include <os_debug.h>
 
-#define OS_IDLE_TASK_PRIO             (OS_TASK_PRIORITY_MAX - 1)
-
 #include <os_list.h>
 #include <os_error.h>
 #include <os_version.h>
 
 #include <os_cpu.h>
 
-#include <os_console.h>
 #include <os_irq.h>
 #include <os_tick.h>
 #include <os_timer.h>
@@ -90,5 +70,8 @@ void os_start(void);
 #endif
 
 #include <os_ipc.h>
+
+void os_init(void);
+void os_start(void);
 
 #endif	/* _OS_H_ */

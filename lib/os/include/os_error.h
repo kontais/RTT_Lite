@@ -24,6 +24,18 @@
 #ifndef _OS_ERROR_H_
 #define _OS_ERROR_H_
 
+typedef enum {
+  OS_OK       = 0, 	/* There is no error */
+  OS_ERROR    = 1, 	/* A generic error happens */
+  OS_TIMEOUT  = 2, 	/* Timed out */
+  OS_EFULL    = 3, 	/* The resource is full */
+  OS_EEMPTY   = 4, 	/* The resource is empty */
+  OS_ENOMEM   = 5, 	/* No memory */
+  OS_NOSYS    = 6, 	/* No system */
+  OS_EBUSY    = 7, 	/* Busy */
+  OS_EIO      = 8, 	/* IO error */
+} os_err_t;
+
 os_err_t os_errno_get(void);
 void os_errno_set(os_err_t error);
 

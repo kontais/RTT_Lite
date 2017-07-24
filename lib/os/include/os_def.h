@@ -67,4 +67,6 @@ typedef int32_t                     offset_t;       /* Type for offset */
 #define OS_WAIT_FOREVER             0xffffffff      /* Block forever until get resource. */
 #define OS_NO_WAIT                  0x00000000      /* Non-block. */
 
+#define OS_IDLE_TASK_PRIO             (OS_TASK_PRIORITY_MAX - 1)
+
 #endif
