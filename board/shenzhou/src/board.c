@@ -63,7 +63,6 @@ void board_init(void)
     led_init();
 
     usart2_init();
-    console_output = usart2_output;
 }
 
 /*@}*/

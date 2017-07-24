@@ -475,11 +475,6 @@
               <FilePath>..\..\lib\os\src\os.c</FilePath>
             </File>
             <File>
-              <FileName>os_console.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\lib\os\src\os_console.c</FilePath>
-            </File>
-            <File>
               <FileName>os_error.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\lib\os\src\os_error.c</FilePath>
