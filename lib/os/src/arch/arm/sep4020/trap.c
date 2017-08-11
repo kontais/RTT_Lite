@@ -25,7 +25,7 @@
  */
 /*@{*/
 
-extern struct os_task *os_current_task;
+extern os_task_t *os_current_task;
 
 /**
  * this function will show registers of CPU

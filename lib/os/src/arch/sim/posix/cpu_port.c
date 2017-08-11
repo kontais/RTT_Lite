@@ -248,7 +248,7 @@ os_sr_t os_enter_critical(void)
 
 void os_exit_critical(os_sr_t sr)
 {
-    struct os_task * tid;
+    os_task_t * tid;
     pthread_t pid;
     thread_t *thread_from;
     thread_t *thread_to;
@@ -344,7 +344,7 @@ void os_exit_critical(os_sr_t sr)
 void os_arch_context_switch(uint32_t from,
                           uint32_t to)
 {
-    struct os_task * tid;
+    os_task_t * tid;
     pthread_t pid;
     thread_t *thread_from;
     thread_t *thread_to;

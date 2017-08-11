@@ -34,7 +34,7 @@
  *
  * @return the operation status, OS_OK on successful
  */
-os_err_t os_mutex_init(os_mutex_t *mutex, const char *name, uint8_t flag)
+os_err_t os_mutex_init(os_mutex_t *mutex, uint8_t flag)
 {
     OS_ASSERT(mutex != NULL);
 

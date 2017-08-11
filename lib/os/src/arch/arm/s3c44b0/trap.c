@@ -23,7 +23,7 @@ extern unsigned char interrupt_bank1[256];
 extern unsigned char interrupt_bank2[256];
 extern unsigned char interrupt_bank3[256];
 
-extern struct os_task *os_current_task;
+extern os_task_t *os_current_task;
 
 /**
  * @addtogroup S3C44B0

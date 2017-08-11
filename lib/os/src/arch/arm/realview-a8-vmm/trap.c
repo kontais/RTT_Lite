@@ -24,7 +24,7 @@
 
 #include "gic.h"
 
-extern struct os_task *os_current_task;
+extern os_task_t *os_current_task;
 #ifdef RT_USING_FINSH
 extern long list_task(void);
 #endif

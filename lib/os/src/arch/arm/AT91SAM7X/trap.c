@@ -42,7 +42,7 @@ void os_arch_trap_fiq(void)
     printk("fast interrupt request\n");
 }
 
-extern struct os_task* os_current_task;
+extern os_task_t* os_current_task;
 void os_arch_trap_abort(void)
 {
     printk("Abort occured!!! Thread [%s] suspended.\n",os_current_task->name);

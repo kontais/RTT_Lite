@@ -44,7 +44,7 @@ typedef struct os_mutex os_mutex_t;
 /*
  * mutex interface
  */
-os_err_t os_mutex_init(os_mutex_t *mutex, const char *name, uint8_t flag);
+os_err_t os_mutex_init(os_mutex_t *mutex, uint8_t flag);
 os_err_t os_mutex_delete(os_mutex_t *mutex);
 
 os_err_t os_mutex_take(os_mutex_t *mutex, os_tick_t timeout);
