@@ -31,4 +31,9 @@ typedef unsigned char bool_t;
 #define TRUE    ((bool_t) 1 == 1)
 #define FALSE   ((bool_t) 0 == 1)
 
+//typedef uint32_t                    time_t;         /* Type for time stamp */
+typedef uint32_t                    os_tick_t;      /* Type for tick count */
+typedef uint32_t                    size_t;         /* Type for size number */
+typedef int32_t                     offset_t;       /* Type for offset */
+
 #endif /* _OS_TYPES_H_ */
