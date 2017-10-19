@@ -29,7 +29,6 @@
  * management.
  *
  * @param mb the mailbox object
- * @param name the name of mailbox
  * @param msgpool the begin address of buffer to save received mail
  * @param size the size of mailbox
  * @param flag the flag of mailbox
@@ -37,7 +36,6 @@
  * @return the operation status, OS_OK on successful
  */
 os_err_t os_mbox_init(os_mbox_t *mb,
-                    const char  *name,
                     void        *msgpool,
                     size_t    size,
                     uint8_t   flag)

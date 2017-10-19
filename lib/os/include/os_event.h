@@ -46,7 +46,7 @@ typedef struct os_event os_event_t;
 /*
  * event interface
  */
-os_err_t os_event_init(os_event_t *event, const char *name, uint8_t flag);
+os_err_t os_event_init(os_event_t *event, uint8_t flag);
 os_err_t os_event_delete(os_event_t *event);
 
 os_err_t os_event_put(os_event_t *event, uint32_t set);

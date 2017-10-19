@@ -29,12 +29,11 @@
  * management.
  *
  * @param event the event object
- * @param name the name of event
  * @param flag the flag of event
  *
  * @return the operation status, OS_OK on successful
  */
-os_err_t os_event_init(os_event_t *event, const char *name, uint8_t flag)
+os_err_t os_event_init(os_event_t *event, uint8_t flag)
 {
     OS_ASSERT(event != NULL);
 

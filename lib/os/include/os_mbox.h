@@ -48,7 +48,6 @@ typedef struct os_mbox os_mbox_t;
  * mailbox interface
  */
 os_err_t os_mbox_init(os_mbox_t *mb,
-                    const char  *name,
                     void        *msgpool,
                     size_t    size,
                     uint8_t   flag);

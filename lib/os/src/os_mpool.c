@@ -35,7 +35,6 @@
  * for static object.
  *
  * @param mp the memory pool object
- * @param name the name of memory pool
  * @param start the star address of memory pool
  * @param size the total size of memory pool
  * @param block_size the size for each block
@@ -43,7 +42,6 @@
  * @return OS_OK
  */
 os_err_t os_mpool_init(os_mpool_t *mp,
-                    const char        *name,
                     void              *start,
                     size_t          size,
                     size_t          block_size)

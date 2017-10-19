@@ -173,7 +173,7 @@ void os_heap_init(void *begin_addr, void *end_addr)
     heap_end->next  = mem_size_aligned + SIZEOF_STRUCT_MEM;
     heap_end->prev  = mem_size_aligned + SIZEOF_STRUCT_MEM;
 
-    os_sem_init(&heap_sem, "heap", 1, OS_IPC_FIFO);
+    os_sem_init(&heap_sem, 1, OS_IPC_FIFO);
 
     /* initialize the lowest-free pointer to the start of the heap */
     lfree = (struct heap_mem *)heap_ptr;

@@ -40,7 +40,6 @@ typedef struct os_sem os_sem_t;
  * semaphore interface
  */
 os_err_t os_sem_init(os_sem_t *sem,
-                     const char *name,
                      uint32_t value,
                      uint8_t  flag);
 os_err_t os_sem_delete(os_sem_t *sem);

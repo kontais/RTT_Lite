@@ -29,14 +29,12 @@
  * resource management.
  *
  * @param sem the semaphore object
- * @param name the name of semaphore
  * @param value the init value of semaphore
  * @param flag the flag of semaphore
  *
  * @return the operation status, OS_OK on successful
  */
 os_err_t os_sem_init(os_sem_t *sem,
-                     const char *name,
                      uint32_t value,
                      uint8_t  flag)
 {

@@ -47,7 +47,6 @@ typedef struct os_mpool os_mpool_t;
  * memory pool interface
  */
 os_err_t os_mpool_init(os_mpool_t *mp,
-                    const char        *name,
                     void              *start,
                     size_t          size,
                     size_t          block_size);
