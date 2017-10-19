@@ -35,16 +35,12 @@
 #ifndef __OS_DEF_H__
 #define __OS_DEF_H__
 
-typedef int                         bool_t;      /* boolean type */
+#include <os_types.h>
 
 //typedef uint32_t                    time_t;         /* Type for time stamp */
 typedef uint32_t                    os_tick_t;      /* Type for tick count */
 typedef uint32_t                    size_t;         /* Type for size number */
 typedef int32_t                     offset_t;       /* Type for offset */
-
-/* boolean type definitions */
-#define TRUE                        1               /* boolean true  */
-#define FALSE                       0               /* boolean fails */
 
 /**
  * @ingroup BasicDef

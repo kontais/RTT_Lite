@@ -9,6 +9,9 @@
 
 #define OS_TASK_PRIORITY_MAX          256     // 256 max
 
+
+#define IDLE_TASK_STACK_SIZE           512
+
 /* DEBUG */
 #define OS_CFG_DEBUG
 #define OS_CFG_OVERFLOW_CHECK

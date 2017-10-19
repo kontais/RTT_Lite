@@ -71,14 +71,12 @@ static void _os_timer_init(os_timer_t *timer,
  * initialize a static timer object.
  *
  * @param timer the static timer object
- * @param name the name of timer
  * @param timeout the timeout function
  * @param parameter the parameter of timeout function
  * @param time the tick of timer
  * @param flag the flag of timer
  */
 void os_timer_init(os_timer_t *timer,
-                   const char *name,
                    void (*timeout)(void *parameter),
                    void       *parameter,
                    os_tick_t   time,

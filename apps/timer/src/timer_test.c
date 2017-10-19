@@ -48,15 +48,15 @@ static void time_out4(void *arg)
 
 void timer_test(void)
 {
-    os_timer_init(&test_timer, "xx1", time_out1, NULL, 100, OS_TIMER_PERIODIC);
+    os_timer_init(&test_timer, time_out1, NULL, 100, OS_TIMER_PERIODIC);
     os_timer_start(&test_timer);
 
-    os_timer_init(&test_timer2, "xx2", time_out2, NULL, 200, OS_TIMER_PERIODIC);
+    os_timer_init(&test_timer2, time_out2, NULL, 200, OS_TIMER_PERIODIC);
     os_timer_start(&test_timer2);
 
-    os_timer_init(&test_timer3, "xx3", time_out3, NULL, 1000, OS_TIMER_PERIODIC | OS_TIMER_SOFT_TIMER);
+    os_timer_init(&test_timer3, time_out3, NULL, 1000, OS_TIMER_PERIODIC | OS_TIMER_SOFT_TIMER);
     os_timer_start(&test_timer3);
 
-    os_timer_init(&test_timer4, "xx4", time_out4, NULL, 2000, OS_TIMER_PERIODIC | OS_TIMER_SOFT_TIMER);
+    os_timer_init(&test_timer4, time_out4, NULL, 2000, OS_TIMER_PERIODIC | OS_TIMER_SOFT_TIMER);
     os_timer_start(&test_timer4);
 }

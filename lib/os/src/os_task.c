@@ -70,6 +70,8 @@ static os_err_t _os_task_init(os_task_t *task,
 {
     /* init task list */
     os_list_init(&(task->tlist));
+    
+    strncpy(task->name, name, OS_NAME_MAX);
 
     task->entry = (void *)entry;
     task->parameter = parameter;
@@ -102,7 +104,6 @@ static os_err_t _os_task_init(os_task_t *task,
 
     /* init task timer */
     os_timer_init(&(task->timer),
-                  task->name,
                   os_task_timeout,
                   task,
                   0,

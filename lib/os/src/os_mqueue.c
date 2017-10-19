@@ -35,7 +35,6 @@ typedef struct os_mqueue_msg os_mqueue_msg_t;
  * resource management.
  *
  * @param mq the message object
- * @param name the name of message queue
  * @param msgpool the beginning address of buffer to save messages
  * @param msg_size the maximum size of message
  * @param pool_size the size of buffer to save messages
@@ -44,7 +43,6 @@ typedef struct os_mqueue_msg os_mqueue_msg_t;
  * @return the operation status, OS_OK on successful
  */
 os_err_t os_mqueue_init(os_mqueue_t *mq,
-                    const char *name,
                     void       *msgpool,
                     size_t   msg_size,
                     size_t   pool_size,

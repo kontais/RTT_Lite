@@ -49,7 +49,6 @@ typedef struct os_mqueue os_mqueue_t;
  * message queue interface
  */
 os_err_t os_mqueue_init(os_mqueue_t *mq,
-                    const char *name,
                     void       *msgpool,
                     size_t   msg_size,
                     size_t   pool_size,

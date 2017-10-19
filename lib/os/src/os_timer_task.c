@@ -40,8 +40,7 @@ void _os_timer_remove(os_timer_t *timer);
 os_list_t os_soft_timer_list = OS_LIST_INIT(os_soft_timer_list);
 
 os_task_t timer_task;
-ALIGN(OS_ALIGN_SIZE)
-static uint8_t timer_task_stack[OS_TIMER_TASK_STACK_SIZE];
+ALIGN(OS_ALIGN_SIZE) static uint8_t timer_task_stack[OS_TIMER_TASK_STACK_SIZE];
 
 /**
  * This function will check timer list, if a timeout event happens, the

@@ -63,7 +63,6 @@ typedef struct os_timer os_timer_t;
  * timer user service
  */
 void os_timer_init(os_timer_t *timer,
-                   const char *name,
                    void (*timeout)(void *parameter),
                    void       *parameter,
                    os_tick_t   time,
