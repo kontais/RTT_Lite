@@ -25,10 +25,6 @@ void os_init(void)
 
 void os_start(void)
 {
-    /* init timer task */
-#ifdef OS_CFG_SOFT_TIMER
-    os_init_timer_task();
-#endif
     /* init idle task */
     os_init_idle_task();
 

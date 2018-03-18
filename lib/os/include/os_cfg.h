@@ -16,11 +16,6 @@
 #define OS_CFG_DEBUG
 #define OS_CFG_OVERFLOW_CHECK
 
-/* TIMER_TASK */
-#define OS_CFG_SOFT_TIMER
-#define OS_TIMER_TASK_PRIO            4
-#define OS_TIMER_TASK_STACK_SIZE      512
-
 /* HEAP */
 #define OS_CFG_HEAP
 #define OS_HEAP_SIZE                  64

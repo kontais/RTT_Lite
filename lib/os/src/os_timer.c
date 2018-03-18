@@ -28,10 +28,6 @@
 /* hard timer list */
 static os_list_t os_timer_list = OS_LIST_INIT(os_timer_list);
 
-#ifdef OS_CFG_SOFT_TIMER
-extern os_task_t timer_task;
-#endif
-
 void _os_timer_remove(os_timer_t *timer)
 {
     os_list_remove(&timer->list);
@@ -117,17 +113,8 @@ os_err_t os_timer_start(os_timer_t *timer)
 
     current_tick = os_tick_get();
 
-#ifdef OS_CFG_SOFT_TIMER
-    if (timer->flag & OS_TIMER_SOFT_TIMER) {
-        /* insert timer to soft timer list */
-        timer_list = &os_soft_timer_list;
-    }
-    else
-#endif
-    {
-        /* insert timer to system timer list */
-        timer_list = &os_timer_list;
-    }
+		/* insert timer to system timer list */
+		timer_list = &os_timer_list;
 
     for (n = timer_list; n != timer_list->prev; n  = n->next) {
         os_timer_t *timer_entry;
@@ -152,17 +139,6 @@ os_err_t os_timer_start(os_timer_t *timer)
     timer->flag |= OS_TIMER_ACTIVATED;
 
     os_exit_critical(sr);
-
-#ifdef OS_CFG_SOFT_TIMER
-    if (timer->flag & OS_TIMER_SOFT_TIMER) {
-        /* check whether timer task is ready */
-        if (timer_task.stat != OS_TASK_READY) {
-            /* resume timer task to check soft timer */
-            os_task_resume(&timer_task);
-            os_sched();
-        }
-    }
-#endif
 
     return OS_OK;
 }

@@ -65,10 +65,6 @@
 #include <os_mbox.h>
 #include <os_mqueue.h>
 
-#ifdef OS_CFG_SOFT_TIMER
-#include <os_timer_task.h>
-#endif
-
 #include <os_ipc.h>
 
 void os_init(void);

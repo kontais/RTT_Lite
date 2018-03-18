@@ -35,7 +35,6 @@
  */
 #define OS_TIMER_ACTIVATED         0x1             /* timer is active */
 #define OS_TIMER_PERIODIC          0x2             /* periodic timer */
-#define OS_TIMER_SOFT_TIMER        0x4             /* soft timer,the timer's callback function will be called in timer task. */
 
 #define OS_TIMER_SET_TIME          0x0             /* set timer control command */
 #define OS_TIMER_GET_TIME          0x1             /* get timer control command */

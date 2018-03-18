@@ -13,9 +13,7 @@
  */
 #include <os.h>
 
-uint32_t os_version = OS_VERSION;
-
 uint32_t os_version_get(void)
 {
-    return os_version;
+    return OS_VERSION;
 }
