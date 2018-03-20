@@ -406,46 +406,6 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>board\shenzhou</GroupName>
-          <Files>
-            <File>
-              <FileName>board.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\board.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f10x.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\system_stm32f10x.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\usart2.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f10x_cl.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\board\shenzhou\src\startup_stm32f10x_cl.s</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>fgetc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\fgetc.c</FilePath>
-            </File>
-            <File>
-              <FileName>fputc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\shenzhou\src\fputc.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>mcu\stm32f1xx</GroupName>
           <Files>
             <File>
@@ -477,6 +437,46 @@
               <FileName>stm32f10x_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f10x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f10x_cl.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\mcu\stm\stm32f1xx\src\startup_stm32f10x_cl.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>board\shenzhou</GroupName>
+          <Files>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\usart2.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>fgetc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\fgetc.c</FilePath>
+            </File>
+            <File>
+              <FileName>fputc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\shenzhou\src\fputc.c</FilePath>
             </File>
           </Files>
         </Group>

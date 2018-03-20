@@ -406,46 +406,6 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>board\moba</GroupName>
-          <Files>
-            <File>
-              <FileName>board.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\moba\src\board.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\moba\src\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\moba\src\system_stm32f4xx.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\moba\src\uart1.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f40xx.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\board\moba\src\startup_stm32f40xx.s</FilePath>
-            </File>
-            <File>
-              <FileName>fgetc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\moba\src\fgetc.c</FilePath>
-            </File>
-            <File>
-              <FileName>fputc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\board\moba\src\fputc.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>mcu\stm32f4xx</GroupName>
           <Files>
             <File>
@@ -468,10 +428,50 @@
               <FileType>1</FileType>
               <FilePath>..\..\mcu\stm\stm32f4xx\src\stm32f4xx_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\mcu\stm\stm32f4xx\src\system_stm32f4xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f40xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\mcu\stm\stm32f4xx\src\startup_stm32f40xx.s</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>lib\os\cortex_m4</GroupName>
+          <GroupName>board\moba</GroupName>
+          <Files>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\uart1.c</FilePath>
+            </File>
+            <File>
+              <FileName>fgetc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\fgetc.c</FilePath>
+            </File>
+            <File>
+              <FileName>fputc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\board\moba\src\fputc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>os\cortex_m4</GroupName>
           <Files>
             <File>
               <FileName>cpuport.c</FileName>
@@ -486,7 +486,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lib\os</GroupName>
+          <GroupName>os</GroupName>
           <Files>
             <File>
               <FileName>os.c</FileName>
@@ -584,12 +584,6 @@
               <FilePath>..\..\lib\os\src\os_version.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>lib\cmsis</GroupName>
-        </Group>
-        <Group>
-          <GroupName>lib\c</GroupName>
         </Group>
         <Group>
           <GroupName>apps\timer</GroupName>
