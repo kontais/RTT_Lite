@@ -2,7 +2,6 @@
 @forfiles /s /m *.lst /c "cmd /c del @file"
 @forfiles /s /m *.dep /c "cmd /c del @file"
 @forfiles /s /m *.uvgui* /c "cmd /c del @file"
-@forfiles /s /m *.plg /c "cmd /c del @file"
 @forfiles /s /m *.sct /c "cmd /c del @file"
 @forfiles /s /m *.map /c "cmd /c del @file"
 @forfiles /s /m *.crf /c "cmd /c del @file"

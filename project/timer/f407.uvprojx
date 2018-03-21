@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\board\moba\include;..\..\mcu\stm\stm32f4xx\include;..\..\compiler\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m4;..\..\lib\c\include;..\..\lib\cmsis\include;.\include</IncludePath>
+              <IncludePath>..\..\board\moba\include;..\..\mcu\stm32\stm32f4xx\include;..\..\toolchain\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m4;..\..\lib\c\include;..\..\lib\cmsis\include;.\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,34 +409,34 @@
           <GroupName>mcu\stm32f4xx</GroupName>
           <Files>
             <File>
+              <FileName>startup_stm32f40xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\mcu\stm32\stm32f4xx\src\startup_stm32f40xx.s</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4xx_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f4xx\src\stm32f4xx_gpio.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f4xx\src\stm32f4xx_gpio.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f4xx\src\stm32f4xx_rcc.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f4xx\src\stm32f4xx_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f4xx\src\stm32f4xx_spi.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f4xx\src\stm32f4xx_spi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f4xx\src\stm32f4xx_usart.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f4xx\src\stm32f4xx_usart.c</FilePath>
             </File>
             <File>
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f4xx\src\system_stm32f4xx.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f40xx.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\mcu\stm\stm32f4xx\src\startup_stm32f40xx.s</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f4xx\src\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -471,7 +471,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>os\cortex_m4</GroupName>
+          <GroupName>lib\os\cortex_m4</GroupName>
           <Files>
             <File>
               <FileName>cpuport.c</FileName>
@@ -486,7 +486,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>os</GroupName>
+          <GroupName>lib\os</GroupName>
           <Files>
             <File>
               <FileName>os.c</FileName>
@@ -586,7 +586,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>apps\timer</GroupName>
+          <GroupName>project\timer</GroupName>
           <Files>
             <File>
               <FileName>application.c</FileName>

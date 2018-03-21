@@ -35,7 +35,7 @@
 #include <string.h>
 
 #include <os_cfg.h>
-#include <compiler.h>
+#include <toolchain.h>
 #include <os_def.h>
 #include <os_misc.h>
 #include <os_debug.h>

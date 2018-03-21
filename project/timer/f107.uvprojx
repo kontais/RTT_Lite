@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\board\shenzhou\include;..\..\mcu\stm\stm32f1xx\include;..\..\compiler\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m3;..\..\lib\c\include;..\..\lib\cmsis\include;.\include</IncludePath>
+              <IncludePath>..\..\board\shenzhou\include;..\..\mcu\stm32\stm32f1xx\include;..\..\toolchain\armcc;..\..\lib\os\include;..\..\lib\os\include\arch\cortex_m3;..\..\lib\c\include;..\..\lib\cmsis\include;.\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,44 +409,44 @@
           <GroupName>mcu\stm32f1xx</GroupName>
           <Files>
             <File>
+              <FileName>startup_stm32f10x_cl.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\startup_stm32f10x_cl.s</FilePath>
+            </File>
+            <File>
               <FileName>misc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\misc.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\misc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_dma.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\stm32f10x_dma.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_gpio.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\stm32f10x_gpio.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_rcc.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\stm32f10x_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_spi.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\stm32f10x_spi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\stm32f10x_usart.c</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\stm32f10x_usart.c</FilePath>
             </File>
             <File>
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\system_stm32f10x.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f10x_cl.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\mcu\stm\stm32f1xx\src\startup_stm32f10x_cl.s</FilePath>
+              <FilePath>..\..\mcu\stm32\stm32f1xx\src\system_stm32f10x.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -596,13 +596,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lib\cmsis</GroupName>
-        </Group>
-        <Group>
-          <GroupName>lib\c</GroupName>
-        </Group>
-        <Group>
-          <GroupName>apps\timer</GroupName>
+          <GroupName>project\timer</GroupName>
           <Files>
             <File>
               <FileName>application.c</FileName>
