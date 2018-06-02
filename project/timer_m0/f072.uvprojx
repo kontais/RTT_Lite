@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F072</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\lib\cmsis\include;..\..\mcu\stm32\stm32f0xx\inc;..\..\board\nucleo-f072rb\include;..\..\lib\os\include;..\..\toolchain\armcc;..\..\lib\os\include\arch\cortex_m0;.\include</IncludePath>
+              <IncludePath>.\include;..\..\lib\cmsis\include;..\..\mcu\stm32\stm32f0xx\inc;..\..\board\nucleo-f072rb\include;..\..\lib\os\include;..\..\toolchain\armcc;..\..\lib\os\include\arch\cortex_m0</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
