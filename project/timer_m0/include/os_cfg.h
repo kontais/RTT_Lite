@@ -16,13 +16,11 @@
 #define OS_CFG_DEBUG
 #define OS_CFG_OVERFLOW_CHECK
 
-///* HEAP */
-//#define OS_CFG_HEAP
-//#define OS_HEAP_SIZE                  64
-//#define OS_HEAP_END                   (0x20000000 + OS_HEAP_SIZE * 1024)
+/* HEAP */
+#define OS_CFG_HEAP
+#define OS_HEAP_SIZE                  16
+#define OS_HEAP_END                   (0x20000000 + OS_HEAP_SIZE * 1024)
 
 #define OS_CONSOLE_BUF_SIZE           128
-
-//#define OS_CFG_CPU_FFS
 
 #endif /* _OS_CFG_H_ */
