@@ -60,7 +60,7 @@ uint32_t interrupt_switch_flag;
  *
  * @return stack address
  */
-uint8_t *os_arch_stack_init(void       *tentry,
+uint8_t *os_arch_task_stack_init(void       *tentry,
                              void       *parameter,
                              uint8_t *stack_addr,
                              void       *texit)
@@ -100,16 +100,16 @@ extern os_task_t os_current_task;
  */
 void os_arch_hard_fault_exception(struct exception_stack_frame *contex)
 {
-    printk("psr: 0x%08x\n", contex->psr);
-    printk(" pc: 0x%08x\n", contex->pc);
-    printk(" lr: 0x%08x\n", contex->lr);
-    printk("r12: 0x%08x\n", contex->r12);
-    printk("r03: 0x%08x\n", contex->r3);
-    printk("r02: 0x%08x\n", contex->r2);
-    printk("r01: 0x%08x\n", contex->r1);
-    printk("r00: 0x%08x\n", contex->r0);
+    printf("psr: 0x%08x\n", contex->psr);
+    printf(" pc: 0x%08x\n", contex->pc);
+    printf(" lr: 0x%08x\n", contex->lr);
+    printf("r12: 0x%08x\n", contex->r12);
+    printf("r03: 0x%08x\n", contex->r3);
+    printf("r02: 0x%08x\n", contex->r2);
+    printf("r01: 0x%08x\n", contex->r1);
+    printf("r00: 0x%08x\n", contex->r0);
 
-    printk("hard fault on task: %s\n", os_current_task->name);
+//    printf("hard fault on task: %s\n", os_current_task->name);
 
 #ifdef RT_USING_FINSH
     list_task();
