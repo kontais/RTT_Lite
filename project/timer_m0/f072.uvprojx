@@ -430,9 +430,9 @@
               <FilePath>..\..\board\nucleo-f072rb\src\fputc.c</FilePath>
             </File>
             <File>
-              <FileName>usart2.c</FileName>
+              <FileName>usart1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\board\nucleo-f072rb\src\usart2.c</FilePath>
+              <FilePath>..\..\board\nucleo-f072rb\src\usart1.c</FilePath>
             </File>
           </Files>
         </Group>

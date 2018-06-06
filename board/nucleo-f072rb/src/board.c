@@ -13,8 +13,7 @@
  */
 
 #include <board.h>
-//#include <led.h>
-#include <usart2.h>
+#include <usart1.h>
 #include <os.h>
 
 /**
@@ -60,9 +59,7 @@ void board_init(void)
     /* Configure the SysTick */
     SysTick_Config(SystemCoreClock / OS_TICKS_PER_SEC);
 	
-//    led_init();
-
-    usart2_init();
+    usart1_init();
 }
 
 /*@}*/
